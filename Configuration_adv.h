@@ -1245,6 +1245,10 @@
    * Set STATUS_EXPIRE_SECONDS to zero to never clear the status.
    * This will prevent position updates from being displayed.
    */
+    #define ST7920_DELAY_1 DELAY_NS(0)
+    #define ST7920_DELAY_2 DELAY_NS(200)
+    #define ST7920_DELAY_3 DELAY_NS(63) // this is the defaults for a 16mhz processor (ie a mega2560)
+   
   #if ENABLED(U8GLIB_ST7920)
     //#define LIGHTWEIGHT_UI
     #if ENABLED(LIGHTWEIGHT_UI)
