@@ -142,12 +142,16 @@
   #define Z_CS_PIN                            40
 #endif
 
-#define E0_STEP_PIN                           26
-#define E0_DIR_PIN                            28
-#define E0_ENABLE_PIN                         24
-#ifndef E0_CS_PIN
-  #define E0_CS_PIN                           42
+#define Z2_STEP_PIN                           26
+#define Z2_DIR_PIN                            28
+#define Z2_ENABLE_PIN                         24
+#ifndef Z2_CS_PIN
+  #define Z2_CS_PIN                           42
 #endif
+
+#define E0_STEP_PIN                           4
+#define E0_DIR_PIN                            5
+#define E0_ENABLE_PIN                         22
 
 #define E1_STEP_PIN                           36
 #define E1_DIR_PIN                            34
@@ -356,17 +360,17 @@
     #define Z_SERIAL_RX_PIN                   65
   #endif
   #ifndef Z2_SERIAL_TX_PIN
-    #define Z2_SERIAL_TX_PIN                  -1
+    #define Z2_SERIAL_TX_PIN                  44
   #endif
   #ifndef Z2_SERIAL_RX_PIN
-    #define Z2_SERIAL_RX_PIN                  -1
+    #define Z2_SERIAL_RX_PIN                  66
   #endif
 
   #ifndef E0_SERIAL_TX_PIN
-    #define E0_SERIAL_TX_PIN                  44
+    #define E0_SERIAL_TX_PIN                  -1
   #endif
   #ifndef E0_SERIAL_RX_PIN
-    #define E0_SERIAL_RX_PIN                  66
+    #define E0_SERIAL_RX_PIN                  -1
   #endif
   #ifndef E1_SERIAL_TX_PIN
     #define E1_SERIAL_TX_PIN                  -1
